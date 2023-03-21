@@ -3,6 +3,10 @@
 /**
 * jack_bauer - prints every minute of the day of Jack Bauer
 * @a: hours
+* @first: first digit
+* @last: last diigt
+* @first2: first digit 2
+* @last2: last digit 2
 * @tmp: Seconds
 *
 * Return: On success 1.
