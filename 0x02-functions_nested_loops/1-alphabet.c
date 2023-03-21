@@ -1,11 +1,9 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
-* main - Entry point
+* main - check the code for Holberton School students.
 *
-* Description: A C program that prints  character a to z
-*
-* Return: Always 0 (Success)
+* Return: Always 0.
 */
 int main(void)
 {
