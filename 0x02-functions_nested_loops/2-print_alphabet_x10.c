@@ -1,11 +1,8 @@
 #include "main.h"
-
 /**
-* print_alphabet - prints character a to z two times
-*
+* print_alphabet_x10 - prints character a to z ten times
 * Return: On success character.
 */
-
 void print_alphabet_x10(void)
 {
 		int tmp = 1;
