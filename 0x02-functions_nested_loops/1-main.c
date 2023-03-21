@@ -1,20 +1,12 @@
-#include <unistd.h>
 #include "main.h"
+
 /**
-* print_alphabet - prints the character
+* main - check the code
 *
-* Return: On success 1.
-* On error, -1 is returned, and errno is set appropriately.
+* Return: Always 0.
 */
-
-void print_alphabet(void)
+int main(void)
 {
-		char c = 'a';
-
-		while (c <= 'z')
-		{
-			_putchar(c);
-			c++;
-		}
-		_putchar('\n');
+		print_alphabet();
+		return (0);
 }
