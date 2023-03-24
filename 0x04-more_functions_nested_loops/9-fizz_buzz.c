@@ -14,17 +14,34 @@ int main(void)
 
 		while (tmp <= 100)
 		{
-			if (tmp % 3 == 0 && tmp % 5 == 0)
-				printf("FizzBuzz ");
-			else if (tmp % 3 == 0)
-				printf("Fizz ");
-			else if (tmp % 5 == 0)
+			if (tmp == 100)
 			{
-				printf("Buzz ");
+				if (tmp % 3 == 0 && tmp % 5 == 0)
+					printf("FizzBuzz");
+				else if (tmp % 3 == 0)
+					printf("Fizz");
+				else if (tmp % 5 == 0)
+				{
+					printf("Buzz");
+				}
+				else
+					printf("%d", tmp);
+				tmp++;
 			}
 			else
-				printf("%d ", tmp);
-			tmp++;
+			{
+				if (tmp % 3 == 0 && tmp % 5 == 0)
+					printf("FizzBuzz ");
+				else if (tmp % 3 == 0)
+					printf("Fizz ");
+				else if (tmp % 5 == 0)
+				{
+					printf("Buzz ");
+				}
+				else
+					printf("%d ", tmp);
+				tmp++;
+			}
 		}
 		printf("\n");
 		return (0);
