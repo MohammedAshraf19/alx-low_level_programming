@@ -8,9 +8,12 @@
 
 void print_numbers(void)
 {
-		for (int i = '0'; i <= '9'; i++)
+		int tmp = '0';
+
+		while (tmp <= '9')
 		{
-			_putchar(i);
+			_putchar(tmp);
+			tmp++;
 		}
 		_putchar('\n');
 }
