@@ -6,15 +6,15 @@
 */
 void more_numbers(void)
 {
-		int n = 1;
+		int n = 0;
 
-		while (n <= 14)
+		while (n < 10)
 		{
-			int tmp = 1;
+			int tmp = 0;
 
 			while (tmp <= 14)
 			{
-				if (tmp <= 10)
+				if (tmp > 9)
 					_putchar((tmp / 10) + '0');
 				_putchar((tmp % 10) + '0');
 				tmp++;
