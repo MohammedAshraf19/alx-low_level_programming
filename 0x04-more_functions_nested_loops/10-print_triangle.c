@@ -18,15 +18,13 @@ void print_triangle(int size)
 
 			while (tmp <= size)
 			{
-				int tmp2 = 1;
+				int tmp2 = 1, tmp3 = 1;
 
 				while (tmp2 < size - tmp + 1)
 				{
 					_putchar(' ');
 					tmp2++;
 				}
-
-				int tmp3 = 1;
 
 				while (tmp3 <= tmp)
 				{
