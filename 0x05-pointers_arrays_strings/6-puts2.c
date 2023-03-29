@@ -8,7 +8,7 @@
 */
 void puts2(char *str)
 {
-		int tmp =  0;
+		unsigned int tmp =  0;
 
 		while (tmp <= strlen(str) - 1)
 		{
