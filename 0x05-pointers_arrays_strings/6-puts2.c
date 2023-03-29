@@ -15,5 +15,9 @@ void puts2(char *str)
 			_putchar(str[tmp]);
 			tmp = tmp + 2;
 		}
+		if (str == "")
+		{
+			_putchar(' ');
+		}
 		_putchar('\n');
 }
