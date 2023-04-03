@@ -5,7 +5,7 @@
 * @s: Pointer refer to array of char.
 * @b: character.
 * @n: size.
-* Return: integer.
+* Return: pointer.
 */
 
 char *_memset(char *s, char b, unsigned int n)
