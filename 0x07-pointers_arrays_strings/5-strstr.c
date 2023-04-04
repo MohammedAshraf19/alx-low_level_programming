@@ -23,7 +23,10 @@ char *_strstr(char *haystack, char *needle)
 					found = 1;
 				}
 				else
+				{
 					found = 0;
+					break;
+				}
 				tmp++;
 			}
 			if (found)
