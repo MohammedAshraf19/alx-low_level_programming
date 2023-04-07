@@ -6,6 +6,7 @@
 * Return: Integer.
 */
 
+int square(int n, int num);
 int _sqrt_recursion(int n)
 {
 		square(n, 1);
