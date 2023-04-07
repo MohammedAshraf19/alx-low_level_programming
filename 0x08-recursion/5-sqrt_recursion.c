@@ -3,6 +3,7 @@
 /**
 * _sqrt_recursion -  the natural square root of a number.
 * @n: integer .
+* @num: integer.
 * Return: Integer.
 */
 
