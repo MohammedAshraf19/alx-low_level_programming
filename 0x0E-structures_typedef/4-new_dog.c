@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 
 /**
 * strcopy - copy string.
@@ -42,7 +43,7 @@ int _strLen(char *c)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-		int size_of_str, i;
+		int size_of_str;
 
 		dog_t *dog;
 
