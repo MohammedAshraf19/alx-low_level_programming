@@ -7,7 +7,7 @@
 */
 int is_prime_number(int n)
 {
-		int i;
+		int i = 2;
 
 		if (n == 2)
 		{
@@ -17,12 +17,13 @@ int is_prime_number(int n)
 		{
 			return (0);
 		}
-		for (i = 2; i < n; i++)
+		while (i < n)
 		{
 			if (n % i == 0)
 			{
 				return (0);
 			}
+			i = i + 1;
 		}
 		return (1);
 }
