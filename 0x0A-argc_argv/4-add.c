@@ -11,21 +11,29 @@
 */
 int main(int argc, char **argv)
 {
-		int i, count = 0;
-
-		for (i = 1; i != argc; i++)
+		if (argc < 1)
 		{
-			if ((argv[i][0] >= 'a' && argv[i][0] <= 'z') ||
-				(argv[i][0] >= 'A' && argv[i][0] <= 'Z'))
-			{
-				puts("Error");
-				return (1);
-			}
-			else
-			{
-				count += atoi(argv[i]);
-			}
+			puts("0");
+			return (0);
 		}
-		printf("%d\n", count);
-		return (0);
+		else
+		{
+			int i, count = 0;
+
+			for (i = 1; i != argc; i++)
+			{
+				if ((argv[i][0] >= 'a' && argv[i][0] <= 'z') ||
+					(argv[i][0] >= 'A' && argv[i][0] <= 'Z'))
+				{
+					puts("Error");
+					return (1);
+				}
+				else
+				{
+					count += atoi(argv[i]);
+				}
+			}
+			printf("%d\n", count);
+			return (0);
+		}
 }
