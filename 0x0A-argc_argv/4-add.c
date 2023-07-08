@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 		{
 			int i, count = 0;
 
-			for (i = 1; i != argc; i++)
+			for (i = 1; i < argc; i++)
 			{
 				if ((argv[i][0] >= 'a' && argv[i][0] <= 'z') ||
 					(argv[i][0] >= 'A' && argv[i][0] <= 'Z'))
