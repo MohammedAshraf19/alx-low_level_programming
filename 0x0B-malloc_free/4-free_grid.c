@@ -1,3 +1,6 @@
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 /**
 * free_grid - free 2 dimensional array of integers.
 * @grid: 2 dimensional array of integers.
