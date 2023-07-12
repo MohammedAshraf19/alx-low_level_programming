@@ -1,37 +1,40 @@
-#include <unistd.h>
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
-* alloc_grid - return string
-* @width: Integer.
-* @height: Integer.
-* Return:  2 dimensional array or NULL.
+* alloc_grid - return 2 dimensional array of integers.
+* @width: integer.
+* @height: integer.
+* Return: pointer.
 */
+
 int **alloc_grid(int width, int height)
 {
-		int i, k;
-
 		int **re;
 
-		re = malloc(sizeof(*re) * height);
+		int i, k;
+
+		re = malloc(height * sizeof(*re));
 		if (width <= 0 || height <= 0 || re == 0)
-			return (NULL);
-		for (i = 0; i < height; i++)
 		{
-			re[i] = malloc(sizeof(**re) * width);
-			if (re[i] == 0)
+			return (NULL);
+		}
+		else
+		{
+			for (i = 0; i < height; i++)
 			{
-				while (i--)
+				re[i] = malloc(width * sizeof(**re));
+				if (re[i] == 0)
 				{
-					free(re[i]);
+					while (i--)
+						free(re[i]);
+					free(re);
+					return (NULL);
 				}
-				free(re);
-				return (NULL);
-			}
-			for (k = 0; k < height; k++)
-			{
-				re[i][k] = 0;
+				for (k = 0; k < width; k++)
+				{
+					re[i][k] = 0;
+				}
 			}
 		}
 		return (re);
