@@ -1,0 +1,50 @@
+#include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+/**
+* _strelen - Calculate len of string.
+* @str: String
+* Return: Length of String.
+*/
+
+int _strelen(char *str)
+{
+		int i = 0;
+
+		while (str[i] != '\0')
+			i++;
+		return (i);
+}
+
+/**
+* add_node_end - add node to linked list at end.
+* @head: pointer to pointer to node.
+* @str: String
+* Return: node.
+*/
+
+list_t *add_node_end(list_t **head, const char *str)
+{
+		list_t *temp, *temp2;
+
+		temp = malloc(sizeof(list_t));
+		if (temp == NULL)
+			return (NULL);
+		temp->len = _strelen(strdup(str));
+		temp->str = strdup(str);
+		if (*head == NULL)
+		{
+			temp->next = NULL;
+			*head = temp;
+			return (temp);
+		}
+		temp2 = *head;
+		while (temp2->next != NULL)
+		{
+			temp2 = temp2->next;
+		}
+		temp2->next = temp;
+		temp->next =    NULL;
+		return (temp);
+}
